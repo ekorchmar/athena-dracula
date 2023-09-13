@@ -1,0 +1,667 @@
+@-moz-document regexp("^https?:\\/\\/athena\\..*\\/(search\\-terms|vocabulary|auth\\/(login|remind\\-password|register|reset\\-password)).*") {
+/* 0. Common */
+body,
+html,
+input {
+    font-family: sans-serif;
+    /* Helvetica     has paid license, why would it be set as default?! */
+    color: #6272a4;
+    background-color: #282a36
+}
+
+tbody {
+    color: #f8f8f2
+}
+
+.ac-link {
+    color: #8be9fd;
+}
+
+.ac-loading-panel {
+    background: #282a36C2;
+}
+
+.ac-checkbox__box {
+    border: 1px solid #bd93f9;
+}
+
+.at-vocabularies .ac-checkbox__check {
+    color: #50fa7b;
+}
+
+/* 0.1. Header */
+.at-nav-item,
+.at-root .ac-header__nav {
+    border-right: none;
+    border-left: none;
+    color: #8be9fd
+}
+
+.at-user-menu__header,
+.at-user-menu__user-name,
+.at-user-menu__arrow {
+    color: #8be9fd;
+}
+
+.at-user-menu__user-pic-container {
+    border: 2px solid #8be9fd;
+}
+
+.at-root__header {
+    background-color: #171924;
+    color: #f8f8f2;
+}
+
+.at-nav-item--selected {
+    background: #1e2131;
+}
+
+/* 0.2. All buttons */
+.ac-button:hover {
+    background: #7f5faa;
+}
+
+.ac-button {
+    background: #bd93f9;
+    color: #282a36
+}
+
+/* 0.3 Odysseus pop up */
+.ac-modal__content-header {
+    background-color: #171924;
+    color: #bd93f9;
+}
+
+.ac-modal__content-body {
+    background: #282a36;
+}
+
+.ac-modal__close-ico {
+    border: 2px solid #ff79c6;
+}
+
+
+/* 1. Start page */
+.at-start-search-page,
+.at-start-search-page__title {
+    background: #282a36;
+    color: #6272a4
+}
+
+.at-start-search-page__title,
+.at-start-search-page__title-domains {
+    color: #f8f8f2;
+}
+
+/* 1.1. Searchbar */
+input.ac-form-input,
+textarea {
+    background-color: #171924;
+    color: #f8f8f2;
+}
+
+input.ac-form-input::placeholder {
+    color: #6272a4;
+}
+
+.at-start-search-page__input {
+    border: 1px solid #ff79c6;
+}
+
+.at-search__facets-wrapper {
+    box-shadow: none;
+}
+
+/* 1.2. Buttons */
+.at-domaincard__card {
+    color: #f1fa8c;
+    background: #171924;
+    box-shadow: none;
+    border: solid 1px #ff79c6
+}
+
+.at-domaincard__termsCount {
+    color: #bd93f9
+}
+
+.at-domaincard__termsCount img {
+    display: none;
+}
+
+/* 2. Search main UI
+   2.1. Sidebar */
+.ac-faceted-search-section {
+    border-bottom: none;
+}
+
+.at-search-facet-panel__current-state,
+.ac-faceted-search__form-fields,
+.ac-faceted-search-section__title-wrapper,
+.ac-faceted-search__submit-wrapper {
+    background: #282a36;
+    background-color: #282a36;
+    color: #f8f8f2
+}
+
+
+/* 2.1.1. Filter tag bubbles*/
+.at-facet-tag,
+.at-facet-tag__remove-button {
+    border: none;
+    color: #282a36;
+}
+
+.at-facet-tag--purple {
+    background-color: #f1fa8c
+}
+
+.at-facet-tag--domain,
+.at-facet-title__badge--domain {
+    background-color: #ff5555
+}
+
+.at-facet-tag--invalidReason,
+.at-facet-title__badge--invalidReason {
+    background-color: #ff79c6
+}
+
+.at-facet-tag--standardConcept,
+.at-facet-title__badge--standardConcept {
+    background-color: #8be9fd
+}
+
+.at-facet-tag--conceptClass,
+.at-facet-title__badge--conceptClass {
+    background-color: #bd93f9
+}
+
+.at-facet-tag--vocabulary,
+.at-facet-title__badge--vocabulary {
+    background-color: #ffb86c
+}
+
+/* 2.1.2. Category selectors */
+.at-facet-title,
+.ac-faceted-search-section__title-arrow {
+    color: #f1fa8c
+}
+
+/* 2.1.3. Category suggestions */
+.ac-faceted-search-section .react-sanfona-item-body-wrapper {
+    background: #171924;
+    padding: 1.5rem 2rem;
+}
+
+.ac-form-checkbox-list__item--inactive {
+    color: #6272a4
+}
+
+input.ac-form-checkbox-list-filterable__filter-input {
+    background-color: #171924;
+    color: #f8f8f2;
+    border: 1px solid #ff79c679;
+}
+
+input.ac-form-checkbox-list-filterable__filter-input::placeholder {
+    color: #6272a4;
+}
+
+.ac-form-checkbox-list-filterable__empty-state {
+    color: #6272a4;
+}
+
+/* 2.1.4. Clear filters button */
+/* 2.2. Search toolbar */
+input.ac-form-input,
+textarea {
+    border: 1px solid #ff79c6;
+}
+
+.at-search-toolbar__search-button {
+    color: #ff79c6;
+    background: none;
+    font-size: 2rem;
+}
+
+.at-search-tooltip-dropdown__icon {
+    color: #ff79c6;
+}
+
+.at-search-toolbar {
+    background: #1e2131;
+    color: #f8f8f2
+}
+
+.at-search-toolbar__title-wrapper {
+    color: #ff79c6
+}
+
+.ac-panel--black-header .ac-panel__header {
+    background: #1e2131;
+    color: #ff79c6;
+}
+
+.at-search-tooltip-dropdown__content {
+    border: solid 1px #ff79c6;
+}
+
+.at-search-tooltip-dropdown__search-tooltip-text {
+    padding: 2rem 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.at-search-tooltip-dropdown__content::before {
+    background: #ff79c6
+}
+
+/* 2.3. Search results table toolbar */
+.at-search-results__management-panel,
+.ac-select__control {
+    background: #282a36;
+    background-color: #282a36;
+}
+
+.at-search-results__download-button--disabled {
+    background: #6272a4;
+}
+
+.ac-select-control__arrow {
+    border-color: #282a36 transparent transparent;
+}
+
+.ac-select-control--bordered .ac-select-control__label {
+    border: 1px solid #f1fa8c;
+    border-right: none;
+}
+
+.at-search-pagination__page-size-select .ac-select-control__arrow-wrapper {
+    background: #f1fa8c;
+}
+
+.at-search-pagination {
+    color: #f1fa8c
+}
+
+.ac-pagination__page {
+    background-color: #44475a;
+    color: #f1fa8c
+}
+
+.at-search-pagination .ac-pagination__page--active {
+    background: #1e2131;
+}
+
+.ac-select-option {
+    background: #282a36;
+    border: none;
+}
+
+.ac-select-option:hover {
+    background: #44475a;
+}
+
+.ac-select__options {
+    box-shadow: none;
+    border: 1px solid #f1fa8c
+}
+
+/* 2.4. Results table */
+/* 2.4.1 Header */
+.ac-table__header-row {
+    background: rgb(68, 71, 90);
+    background: linear-gradient(180deg, rgba(68, 71, 90, 1) 75%, rgba(40, 42, 54, 1) 110%);
+}
+
+.ac-table-header-cell__label,
+.ac-table-header-cell__sorting {
+    color: #bd93f9
+}
+
+.ac-table-header-cell__label-active,
+.ac-table-header-cell__sorting-active {
+    color: #8be9fd
+}
+
+.ac-table-header-cell__sorting--desc,
+.ac-table-header-cell__sorting--act {
+    border-width: 8px 5px 0;
+    border-color: #bd93f9 transparent transparent;
+}
+
+.ac-table-header-cell__sorting--asc-active,
+.ac-table-header-cell__sorting--desc-active {
+    border-color: #8be9fd transparent transparent;
+}
+
+/* 2.4.2. Content */
+.at-search-results__table {
+    color: #f8f8f2;
+}
+
+.ac-table__cell {
+    border-bottom: 1px solid #282a36;
+}
+
+.ac-table-cell-link {
+    color: #43c7e3
+}
+
+.ac-table--hover .ac-table__row:hover {
+    background-color: #44475a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #252632;
+}
+tbody tr:nth-child(odd) {
+    background-color: #282a36;
+}
+
+/* 3. Download page */
+/* 3.1. Vocabulary control panel */
+.at-vocabulary-control-panel {
+    background: #282a36;
+    background-color: #282a36;
+}
+
+.ac-select-control__label {
+    border: 1px solid #f1fa8c;
+    border-right: none;
+    color: #f8f8f2
+}
+
+.ac-select-option__label {
+    color: #f1fa8c
+}
+
+.at-vocabulary-control-panel__selection .ac-select-control__arrow-wrapper {
+    background: #f1fa8c;
+}
+
+.ac-select-control--expanded .ac-select-control__arrow {
+    border-width: 0 4px 8px;
+    border-color: transparent transparent #282a36;
+}
+
+.at-vocabulary-control-panel__history-link {
+    background-color: #8be9fd;
+    color: #282a36;
+}
+.at-vocabulary-control-panel__history-link:hover {
+    background-color: #3c7581;
+}
+
+/* 3.2. Vocabulary rows */
+.at-vocabularies {
+    color: #f8f8f2
+}
+
+.at-cell-license__icon {
+    color: #8be9fd
+}
+
+/* 3.3. History page */
+/* 3.3.1. Toolbar */
+.at-download-history > .ac-toolbar {
+    background: #282a36;
+    background-color: #282a36;
+}
+
+.ac-toolbar__back {
+    background: #f1fa8c
+}
+
+.ac-toolbar__back-icon {
+    color: #282a36
+}
+
+.ac-toolbar__header {
+    color: #f1fa8c
+}
+
+.at-download-history__download-button {
+    background: #f1fa8c;
+    border-radius: 3px;
+}
+
+.at-download-history__download-button:hover {
+    background: #797d4d;
+}
+
+/* 3.3.2. Content */
+.ac-toolbar {
+    background: #1e2131
+}
+
+.at-bundle-caption {
+    color: #f8f8f2
+}
+
+.at-download-history__bundle-caption:not(.react-sanfona-item-expanded) {
+    border-bottom: 1px solid #44475a;
+}
+
+.ac-button--success {
+    background: #50fa7b;
+}
+
+.ac-button--success:hover {
+    background: #308646;
+}
+
+/* 3.4. Download popup */
+.at-confirm-download__bundle-name {
+    background-color: inherit;
+}
+
+input.at-confirm-download__bundle-name-input {
+    color: #f8f8f2;
+    border: 1px solid #f1fa8c
+}
+
+.ac-checkbox__check {
+    color: #50fa7b;
+}
+
+.at-confirm-download__remove-button {
+    background: #ff5555
+}
+
+.at-confirm-download__remove-button:hover {
+    background: #7f2727
+}
+
+button.ac-button--submit {
+    background: #50fa7b
+}
+
+button.ac-button--submit:hover {
+    background: #308646
+}
+
+.at-confirm-download__error {
+    color: #ff5555
+}
+
+/* 3.5. Download prepared popup */
+.at-modal-download-result__text {
+    color: #f8f8f2;
+}
+
+.at-modal-download-result__history-link {
+    background: #8be9fd;
+    color: #282a36
+}
+
+.at-modal-download-result__history-link :hover {
+    background: #499aab
+}
+
+/* 4. Concept view */
+/* 4.1. Subheader */
+.at-term__subheader,
+.at-term__subheader-wrapper {
+    background: #1e2131;
+    color: #f8f8f2
+}
+
+.at-term__subheader-back-btn {
+    background: #f1fa8c;
+    color: #1e2131;
+}
+
+/* 4.2. Concept properties */
+.ac-panel__header {
+    color: #ff79c6;
+    background: rgb(68, 71, 90);
+    background: linear-gradient(180deg, rgba(68, 71, 90, 1) 75%, rgba(40, 42, 54, 1) 110%);
+}
+
+.ac-list-item {
+    color: #f8f8f2;
+    border-bottom: none;
+}
+
+li.ac-list-item:nth-child(even) {
+    background-color: #252632;
+}
+
+li.ac-list-item:nth-child(odd) {
+    background-color: #282a36;
+}
+
+.at-term__description-trigger {
+    color: #bd93f9;
+}
+
+.at-term__description-body-wrapper {
+    background: #282a36;
+}
+
+.at-term__description-body::before {
+    visibility: hidden;
+}
+
+
+/* 4.3. Extended properties */
+.ac-tabs {
+    background: inherit
+}
+
+.ac-tabs__item {
+    border: 1px solid #ff79c6;
+    color: #ff79c6;
+}
+
+.ac-tabs__item--purple.ac-tabs__item--selected {
+    background: #ff79c6;
+    color: rgb(68, 71, 90);
+}
+
+/* 4.3.1. Related concepts */
+.at-term-connections-table__relation-cell,
+.at-term-connections-table__target-cell,
+.at-term-connections-table__vocabulary-cell {
+    border-top: none;
+}
+
+.at-term-connections-table .ac-table__row:hover .at-term-connections-table__relation-cell--empty {
+    background: inherit;
+}
+
+/* 4.3.2. Hierarchy graph  */
+/* 4.3.2.1. Graph header */
+.at-filters-panel {
+    background-color: #1e2131;
+    color: #ff79c6
+}
+
+.at-term-connections__graph #concept-name .wrapper {
+    fill: #1e2131
+}
+
+text#concept-name-text {
+    fill: #f1fa8c;
+    stroke: transparent
+}
+
+/* 4.3.2.2. Graph content */
+.at-term-connections__graph .node {
+    fill: #f1fa8c;
+}
+
+.at-term-connections__graph .nodeWrapper {
+    stroke: #f1fa8c;
+    fill: none;
+    stroke-width: 1px;
+}
+
+.at-term-connections__graph .nodeWrapper.current {
+    stroke: #f1fa8c;
+    fill: #44475a;
+}
+
+.at-term-connections__graph .additional-link,
+.at-term-connections__graph .link {
+    stroke: #f1fa8c;
+    stroke-width: 1.5px;
+    marker-end: none;
+}
+
+.at-term-connections__graph .additional-link:hover,
+.at-term-connections__graph .link:hover {
+    stroke: #797d4d;
+}
+
+#zoom-in-bg,
+#zoom-out-bg,
+.at-term-connections__graph #zoom-in-bg,
+.at-term-connections__graph #zoom-out-bg {
+    fill: #1e2131;
+    stroke: #f1fa8c;
+    stroke-width: 2px;
+}
+
+.at-term-connections__graph #zoom-in-bg:active,
+.at-term-connections__graph #zoom-out-bg:active {
+    fill: #44475a;
+}
+
+text#zoom-in,
+text#zoom-out {
+    fill: #f1fa8c;
+    stroke: transparent
+}
+
+/* 5. Login page */
+.at-login,
+.at-remind,
+.at-register,
+.at-reset {
+    background-color: #1e2131;
+}
+
+.ac-panel__content {
+    background: #171924;
+}
+
+.ac-panel {
+    color: #f8f8f2;
+    box-shadow: none;
+    background: #282a36;
+}
+
+/* 5.1. Login */
+/* 5.2. Registration form */
+.ac-select-control__arrow-wrapper {
+    background: #ff79c6;
+}
+
+/* 5.3. Password reminder */
+.at-login__text--success {
+    color: #50fa7b;
+}
+
+/**/
+}
