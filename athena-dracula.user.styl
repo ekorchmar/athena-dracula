@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?:\\/\\/athena\\..*\\/(search\\-terms|vocabulary|auth\\/(login|remind\\-password|register|reset\\-password)).*") {
+@-moz-document url-prefix("https://athena.ohdsi.org/") {
 /* 0. Common */
 body,
 html,
@@ -22,7 +22,7 @@ tbody {
 }
 
 .ac-loading-panel__ico {
-	filter: invert();
+    filter: invert();
 }
 
 .ac-checkbox__box {
@@ -117,11 +117,11 @@ input.ac-form-input::placeholder {
 }
 
 .ac-button.ac-button--submit.ac-button--rounded.ac-form__submit.at-start-search-page__search-button {
-  background: #ff79c6;
+    background: #ff79c6;
 }
 
 .ac-button.ac-button--submit.ac-button--rounded.ac-form__submit.at-start-search-page__search-button:hover {
-  background: #a82f74;
+    background: #a82f74;
 }
 
 /* 1.2. Buttons */
@@ -137,7 +137,7 @@ input.ac-form-input::placeholder {
 }
 
 .at-domaincard__termsCount img {
-   	filter: invert();
+    filter: invert();
 }
 
 /* 2. Search main UI
